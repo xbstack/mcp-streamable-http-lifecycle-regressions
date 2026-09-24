@@ -1,0 +1,30 @@
+Downloading cpython-3.14.7-macos-aarch64-none (download) (25.3MiB)
+ Downloaded cpython-3.14.7-macos-aarch64-none (download)
+Downloading pydantic-core (1.8MiB)
+ Downloaded pydantic-core
+Installed 28 packages in 36ms
+StreamableHTTP session manager started
+Created new transport with session ID: d0d1728c413342bbad10fdebf9a8b1aa
+HTTP Request: POST http://127.0.0.1:58963/mcp "HTTP/1.1 200 OK"
+Received session ID: d0d1728c413342bbad10fdebf9a8b1aa
+HTTP Request: GET http://127.0.0.1:58963/mcp "HTTP/1.1 200 OK"
+GET stream disconnected, reconnecting in 1000ms...
+HTTP Request: POST http://127.0.0.1:58963/mcp "HTTP/1.1 202 Accepted"
+HTTP Request: POST http://127.0.0.1:58963/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:58963/mcp "HTTP/1.1 200 OK"
+HTTP Request: GET http://127.0.0.1:58963/mcp "HTTP/1.1 200 OK"
+Terminating session: d0d1728c413342bbad10fdebf9a8b1aa
+HTTP Request: DELETE http://127.0.0.1:58963/mcp "HTTP/1.1 200 OK"
+StreamableHTTP session manager shutting down
+platform: macOS-26.6.2-arm64-arm-64bit-Mach-O
+python: 3.14.7
+mcp: 2.2.0
+uvicorn: 0.52.4
+httpx2: 2.13.1
+httpcore2: 2.13.1
+anyio: 4.15.1
+tools/call result: hi
+GET accept: application/json, text/event-stream
+GET content-type: application/json
+RESULT: reproduced — GET offers application/json while the standalone channel is SSE-only, and Content-Type is sent on a bodyless GET
+BOUNDARY: the wrapper deliberately returns JSON for GET to exercise the client's advertised representation; a compliant MCP server should return SSE or 405

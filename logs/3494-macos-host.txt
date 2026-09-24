@@ -1,0 +1,43 @@
+platform: macOS-26.6.2-arm64-arm-64bit-Mach-O
+python: 3.13.15
+fastmcp: 4.0.3
+mcp: 2.2.0
+uvicorn: 0.52.4
+httpx: 0.28.1
+anyio: 4.14.2
+ERROR:    ASGI callable returned without completing response.
+attempt 3: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 4: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 5: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 6: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 7: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 8: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 9: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 10: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 11: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 12: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 13: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 14: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 15: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 16: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 17: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 18: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+ERROR:    ASGI callable returned without completing response.
+attempt 19: RemoteProtocolError: peer closed connection without sending complete message body (incomplete chunked read)
+RESULT: 17/20 initialize POSTs failed
+BOUNDARY: reproduced on this host; compare failure shape with upstream before generalizing
