@@ -1,0 +1,10 @@
+platform: macOS-26.6.2-arm64-arm-64bit
+python: 3.11.15
+mcp: 1.28.1
+first response: {'jsonrpc': '2.0', 'id': 1, 'error': {'code': 32600, 'message': 'Session terminated'}}
+second response: {'jsonrpc': '2.0', 'id': 2, 'error': {'code': 32600, 'message': 'Session terminated'}}
+session after first 404: stale-session-xbstack
+session after second 404: stale-session-xbstack
+outbound methods: ['tools/list', 'tools/list']
+outbound session ids: ['stale-session-xbstack', 'stale-session-xbstack']
+RESULT: REPRODUCED — two 404 responses produced Session terminated, the stale session id remained installed and was reused, and no InitializeRequest was emitted
