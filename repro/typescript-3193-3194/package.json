@@ -1,0 +1,15 @@
+{
+  "name": "xbstack-mcp-transport-repro-20261123",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "repro:sse": "node sse-repro.mjs",
+    "repro:stdio": "node stdio-repro.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "@modelcontextprotocol/client": "2.4.0",
+    "@modelcontextprotocol/server": "2.4.0"
+  }
+}
