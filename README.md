@@ -52,3 +52,7 @@ Outputs are captured under `logs/`.
 ## License
 
 MIT
+
+## November 23, 2026: TypeScript client lifecycle checks
+
+Additional **independent, Node 22.18.0** reproduction of [TypeScript SDK #3193](https://github.com/modelcontextprotocol/typescript-sdk/issues/3193) (legacy SSE initial-failure reconnect loop) and [#3194](https://github.com/modelcontextprotocol/typescript-sdk/issues/3194) (stdio failed-initialize immediate-retry race) is under [`repro/typescript-3193-3194/`](repro/typescript-3193-3194/README.md). It includes pinned package versions, locally run reproduction scripts, observed results, and a separately tested normal-exit workaround for #3194. Legacy SSE and stdio are not the same failure, and neither test is evidence that the newer stateless Streamable HTTP core has the bug. No external credentials or MCP servers were used.
